@@ -1,4 +1,5 @@
 // app/layout.tsx
+import './globals.css';
 import MainHeader from '@/components/layout/main-header';
 import SiteFooter from '@/components/layout/site-footer';
 
@@ -11,7 +12,7 @@ export default function RootLayout({
     <html lang="ru">
       <body>
         <MainHeader />
-        <main className='flex'>
+        <main className="min-h-screen">
           {children}
         </main>
         <SiteFooter />
