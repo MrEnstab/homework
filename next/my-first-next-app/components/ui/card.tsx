@@ -2,20 +2,30 @@ import Image from 'next/image';
  
 export default function ProductCard() {
  return (
-   <div className="border rounded-lg p-4 shadow-sm hover:shadow-md transition">
-     <div className="relative w-full h-48 mb-4">
-       <Image
-         src="/images/products/placeholder.jpg"
-         alt="Товар"
-         fill
-         className="object-cover rounded"
-       />
-     </div>
-     <h3 className="text-lg font-bold">Название товара</h3>
-     <p className="text-gray-600">1000 ₽</p>
-     <button className="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-       В корзину
-     </button>
+  <div className="mx-auto flex h-full w-full max-w-80 flex-col gap-4 rounded-lg bg-white transition">
+
+      <Image
+        src="/images/products/image.png"
+        alt="Товар"
+        width={318}
+        height={280}
+        className="h-auto w-full rounded object-cover"
+      />
+
+    <div className="flex flex-1 flex-col gap-4 px-5 pt-2 sm:px-6">
+      <p className="text-2xl font-bold text-gray-800">Name</p>
+      <div className="flex flex-col gap-2 text-sm sm:text-base">
+        <p className="flex font-bold text-gray-600">Двигатель:</p>
+        <p className="flex font-bold text-gray-600">Год:</p>
+        <p className="flex font-bold text-gray-600">Привод:</p>
+        <p className="flex font-bold text-gray-600">Коробка:</p>
+      </div>
+    </div>
+    <div className="flex w-full border-b border-slate-100"></div>
+    <div className="flex px-5 pb-5 sm:px-6">
+      <p className="text-xl font-bold text-gray-800">от 20 000 ₽ / сутки</p>
+    </div>
+
    </div>
  );
 }
