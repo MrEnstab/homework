@@ -112,7 +112,7 @@ export default function Catalog() {
       />
       
       <div className="mt-4 bg-gray-100 p-4 rounded">
-        <button onClick={form.push[prod]} className="h-10 w-full rounded-lg bg-[#2563EB] px-6 text-sm font-medium text-white sm:w-auto sm:text-base">
+        <button onClick={() => console.log("")} className="h-10 w-full rounded-lg bg-[#2563EB] px-6 text-sm font-medium text-white sm:w-auto sm:text-base">
           Сохранить изменения
         </button>
       </div>
