@@ -3,6 +3,12 @@ import Prem from '@/components/ui/prem';
 import Image from 'next/image';
 
 export default function Home() {
+  const prod = [
+    {id:1, name: "Magazin", price: 228, imageSRC: "/images/products/image.png", dvig:"нету литров", year:19, priv:"задний", box:"два года занимаюсь", conm:"Это отличный автомобиль с мощным двигателем и комфортным салоном. Он идеально подходит для городской езды и дальних поездок. Вы будете наслаждаться каждой минутой за рулем этого автомобиля."},
+    {id:2, name: "Magazin", price: 228, imageSRC: ""},
+    {id:3, name: "Magazin", price: 228, imageSRC: "", dvig:"1немало литров", year:19, priv:"задний", box:"два года занимаюсь"},
+    {id:4, name: "dsf", price: 3434, imageSRC: ""}
+  ]
   return (
     <div className="flex w-full flex-col">
       <section className="overflow-hidden bg-center bg-cover bg-no-repeat bg-[url(/images/products/re.png)] px-4 pb-10 pt-12 sm:px-6 md:px-8 md:pb-0 md:pt-20">
@@ -29,10 +35,19 @@ export default function Home() {
 
       <section className="bg-slate-100 px-4 py-12 sm:px-6 md:px-8 md:py-20">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4 xl:gap-10">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {prod.map((prod) =>(
+            <ProductCard
+             key={prod.id}
+             name={prod.name}
+             price={prod.price}
+             imageSRC={prod.imageSRC}
+             dvig={prod.dvig}
+             year={prod.year}
+             priv={prod.priv}
+             box={prod.box}
+             conm={prod.conm}
+            />
+          ))}
         </div>
       </section>
 
