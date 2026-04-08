@@ -1,1 +1,1 @@
-vless://cc91cb5d-4ddb-4b8f-b0ac-f3cbaff46566@89.23.106.89:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=firefox&sni=yahoo.com&pbk=zqME3jWebP1BKpju4WNtq92mibUndR6acxI6MN3hUgQ&sid=131ddb85&spx=/#KOL146V
+
